@@ -37,6 +37,9 @@ echo -e 'APT::Default-Release "stable";' | sudo tee -a /etc/apt/apt.conf.d/my-de
 
 sudo apt upgrade -y
 
+# Add the testing and unstable repositories
+echo -e "\ndeb http://deb.debian.org/debian testing main\ndeb http://deb.debian.org/debian unstable main\n" | sudo tee -a /etc/apt/sources.list
+
 # if you want to do all testing then use the following otherwise leave off the "-t testing" same would apply to unstalbe "-t unstable"
 #sudo apt update -t testing
 #sudo apt upgrade -t testing -y
