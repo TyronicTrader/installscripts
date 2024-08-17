@@ -42,6 +42,10 @@ sudo apt install -y thunar thunar-archive-plugin thunar-data thunar-font-manager
 sudo apt install -y geany
 sudo apt install -y geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
 sudo apt install -y geany-plugins \ # all plugins
+git clone https://github.com/TyronicTrader/geany-themes.git ~/Downloads
+mkdir ~/.config/geany/
+mkdir ~/.config/geany/colorschemes/
+mv ~/Downloads/colorschemes/* ~/.config/geany/colorschemes/
 
 # install Brave Browser
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
