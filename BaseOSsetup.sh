@@ -26,6 +26,9 @@ echo -e "Package: *\nPin: release a=testing\nPin-Priority: 500\n" | sudo tee -a 
 # This will be for unstable repos which will have lower priority than testing and will not overwrite anything unless you specify it to
 echo -e "Package: *\nPin: release a=unstable\nPin-Priority: 10\n" | sudo tee -a /etc/apt/preferences
 
+# Add the testing and unstable repositories
+echo -e "\ndeb http://deb.debian.org/debian testing main\ndeb http://deb.debian.org/debian unstable main\n" | sudo tee -a /etc/apt/sources.list
+
 sudo apt update
 
 # to confirm above priroty changes took ffect do the following command
@@ -36,9 +39,6 @@ sudo apt policy
 echo -e 'APT::Default-Release "stable";' | sudo tee -a /etc/apt/apt.conf.d/my-default-release
 
 sudo apt upgrade -y
-
-# Add the testing and unstable repositories
-echo -e "\ndeb http://deb.debian.org/debian testing main\ndeb http://deb.debian.org/debian unstable main\n" | sudo tee -a /etc/apt/sources.list
 
 # if you want to do all testing then use the following otherwise leave off the "-t testing" same would apply to unstalbe "-t unstable"
 #sudo apt update -t testing
