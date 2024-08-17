@@ -69,4 +69,4 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HO
 # cleanup
 sudo apt autoremove -y
 
-printf "\e[1;32mYou can now reboot! Thanks you.  You might need to update the VBox client tools to get HOST TO GUEST clipboard to work. \e[0m\n"
+printf "\e[1;32m ## UPDATE lxsession-LXDE-desktop.conf with compiz  ## UPDATE VitrualBox client tools after rebooting ## \e[0m\n"
