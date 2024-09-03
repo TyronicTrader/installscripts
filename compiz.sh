@@ -16,7 +16,7 @@ sudo apt install -y nnn
 
 # Base install files for base setup or development
 #sudo apt install -y dkms linux-headers-$(uname -r) build-essentials
-sudo apt install -y curl ripgrep unzip
+sudo apt install -y curl
 
 # Fonts and icons for now
 sudo apt install -y fonts-recommended fonts-ubuntu fonts-font-awesome fonts-terminus papirus-icon-theme fonts-noto fonts-anonymous-pro
@@ -42,29 +42,15 @@ sudo apt install -y geany
 sudo apt install -y geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
 sudo apt install -y geany-plugins \ # all plugins
 git clone https://github.com/TyronicTrader/geany-themes.git ~/Downloads
-mkdir ~/.config/geany/
-mkdir ~/.config/geany/colorschemes/
-mv ~/Downloads/colorschemes/* ~/.config/geany/colorschemes/
+mkdir $HOME/.config/geany/
+mkdir $HOME/.config/geany/colorschemes/
+mv $HOME/Downloads/geany-themes/colorschemes/* $HOME/.config/geany/colorschemes/
 
 # install Brave Browser
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
 sudo apt install brave-browser -y
-
-# Now we install nvim
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-sudo rm -rf /opt/nvim-linux64
-sudo mkdir -p /opt/nvim-linux64
-sudo chmod a+rX /opt/nvim-linux64
-sudo tar -C /opt -xzf nvim-linux64.tar.gz
-
-# make it available in /usr/local/bin, distro installs to /usr/bin
-sudo ln -sf /opt/nvim-linux64/bin/nvim /usr/local/bin/
-
-# get the kickstart
-mkdir ~/.config/nvim/
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 
 # cleanup
 sudo apt autoremove -y
