@@ -1,7 +1,7 @@
 #!/usr/bin/env/bash
 
 # once finished with the process do min install
-sudo apt install dkms linux-headers-$(uname -r) build-essential htop bzip2
+sudo apt install -y dkms linux-headers-$(uname -r) build-essential htop bzip2
 
 # If you are going to use other repos then you will want to prioritize them for updates and upgrades
 # These will be for your normal distro stable releases and updates
