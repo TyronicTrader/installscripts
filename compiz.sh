@@ -36,10 +36,10 @@ sudo apt install -y thunar thunar-archive-plugin thunar-data thunar-font-manager
 sudo apt install -y geany geany-plugins geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
 
 # geany color-themes
-git clone https://github.com/TyronicTrader/geany-themes.git ~/Downloads
+git clone https://github.com/TyronicTrader/geany-themes.git $HOME/Downloads
 mkdir $HOME/.config/geany/
 mkdir $HOME/.config/geany/colorschemes/
-mv $HOME/Downloads/geany-themes/colorschemes/* $HOME/.config/geany/colorschemes/
+mv $HOME/Downloads/colorschemes/* $HOME/.config/geany/colorschemes/
 
 # install Brave Browser
 sudo apt install -y curl
