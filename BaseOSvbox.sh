@@ -1,7 +1,7 @@
 #!/usr/bin/env/bash
 
 # once finished with the process do min install
-sudo apt install dkms linux-headers-$(uname -r) build-essential htop bzip2
+sudo apt install -y dkms linux-headers-$(uname -r) build-essential htop bzip2
 
 # Virtualbox additions need to be added to the system from the virtualbox menu
 sudo mount /dev/sr0 /media/cdrom
