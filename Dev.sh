@@ -6,7 +6,9 @@ sudo apt install -y llvm-14 llvm-14-doc llvm-14-dev llvm-14-examples llvm-14-lin
 sudo atp install -y clang ccls clang-format clang-tidy clang-tools clangd clazy libclang-cpp-dev libclang-dev libclang1
 sudo atp install -y libc++-dev libc++1 libc++abi-dev libc++abi1 liblld-dev liblldb-dev libomp-dev libomp5 lld lldb llvm llvm-dev llvm-runtime
 sudo apt install -y cmake cmake-data cmake-doc cmake-extras cmake-format ninja-build generate-ninja
-
+export PATH=$PATH:/usr/lib/llvm-14/bin
+echo -e 'export PATH=$PATH:/usr/lib/llvm-14/bin' | tee -a $HOME/.bashrc
+echo -e 'export PATH=$PATH:/usr/lib/llvm-14/bin' | tee -a $HOME/.profile
 
 
 
@@ -65,8 +67,8 @@ sudo tar -C /opt -xzf nvim-linux64.tar.gz
 # make it available in /usr/local/bin, distro installs to /usr/bin
 sudo ln -sf /opt/nvim-linux64/bin/nvim /usr/local/bin/
 # get the kickstart
-mkdir ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+mkdir $HOME/.config/nvim/
+git clone https://github.com/nvim-lua/kickstart.nvim.git $HOME/.config/nvim
 
 
 
