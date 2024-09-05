@@ -90,7 +90,17 @@ sudo apt install -y sqlite3 sqlite3-doc sqlite3-tools sqlitebrowser sqlite-utils
 
 
 
-#### install QT5 and tools
-sudo apt install -y qtcreator qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qttools5-dev-tools clazy qml libqt5charts5-dev libqt5datavisualization5-dev libqt5gamepad5-dev libqt5gstreamer-dev libqt5networkauth5-dev libqt5opengl5-dev libqt5remoteobjects5-dev libqt5scxml5-dev libqt5sensors5-dev libqt5serialbus5-dev libqt5serialport5-dev libqt5svg5-dev libqt5texttospeech5-dev libqt5virtualkeyboard5-dev libqt5waylandclient5-dev libqt5waylandcompositor5-dev libqt5webkit5-dev libqt5webchannel5-dev libqt5websockets5-dev libqt5webview5-dev libqt5x11extras5-dev libqt5xmlpatterns5-dev
+#### install QT5 and tools (upgraded to qt6 and removed some conflicting example packages)
+#### sudo apt install -y qtcreator qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qttools5-dev-tools clazy qml libqt5charts5-dev libqt5datavisualization5-dev libqt5gamepad5-dev libqt5gstreamer-dev libqt5networkauth5-dev libqt5opengl5-dev libqt5remoteobjects5-dev libqt5scxml5-dev libqt5sensors5-dev libqt5serialbus5-dev libqt5serialport5-dev libqt5svg5-dev libqt5texttospeech5-dev libqt5virtualkeyboard5-dev libqt5waylandclient5-dev libqt5waylandcompositor5-dev libqt5webkit5-dev libqt5webchannel5-dev libqt5websockets5-dev libqt5webview5-dev libqt5x11extras5-dev libqt5xmlpatterns5-dev
+#### sudo apt install -y qtcreator qtcreator-data qtcreator-doc assistant-qt6 designer-qt6 designer-qt6-plugins qml-qt6 qdbus-qt6 qt6-base-dev qt6-base-dev-tools qt6-base-doc qt6-base-doc-dev qt6-base-doc-html qt6-base-examples qt6-charts-dev qt6-charts-doc qt6-charts-examples qt6-documentation-tools qt6-gtk-platformtheme qt6-image-formats-plugins qt6-imageformats-doc qt6-l10n-tools qt6-languageserver-dev qt6-networkauth-dev qt6-networkauth-doc qt6-networkauth-doc-dev qt6-networkauth-examples qt6-qmllint-plugins qt6-qmltooling-plugins qt6-svg-dev qt6-svg-doc qt6-svg-doc-dev qt6-svg-examples qt6-tools-dev qt6-tools-dev-tools qt6-tools-doc qt6-tools-doc-dev qt6-tools-examples qt6-translations-l10n qt6ct qtkeychain-qt6-dev 
+sudo apt install -y qtcreator qtcreator-data qtcreator-doc assistant-qt6 designer-qt6 qml-qt6 qdbus-qt6 qt6-base-dev qt6-base-dev-tools qt6-base-doc qt6-base-doc-dev qt6-base-doc-html qt6-charts-dev qt6-charts-doc qt6-documentation-tools qt6-gtk-platformtheme qt6-image-formats-plugins qt6-imageformats-doc qt6-l10n-tools qt6-languageserver-dev qt6-networkauth-dev qt6-networkauth-doc qt6-networkauth-doc-dev qt6-qmllint-plugins qt6-qmltooling-plugins qt6-svg-dev qt6-svg-doc qt6-svg-doc-dev qt6-svg-examples qt6-tools-dev qt6-tools-dev-tools qt6-tools-doc qt6-tools-doc-dev qt6-translations-l10n qt6ct qtkeychain-qt6-dev 
+
+
+
+
+#### install Inkscape
+sudo apt install -y inkscape inkscape-open-symbols inkscape-textext inkscape-textext-doc inkscape-tutorials
+
+
 
 
