@@ -52,6 +52,6 @@ sudo apt upgrade -y
 # If you want bash to have VIM bindings    #Don't forget to set your LS Alais in the .bashrc
 # echo -e "# set bash motions in VIM \nset -o vi" | tee -a .bashrc
 
-sudo apt autoremove
+sudo apt autoremove -y
 
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
