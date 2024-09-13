@@ -1,5 +1,8 @@
 #bin/bash
 
+sudo apt update
+sudo apt upgrade -y
+
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
 
