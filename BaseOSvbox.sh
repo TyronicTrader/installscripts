@@ -1,5 +1,8 @@
 #!/usr/bin/env/bash
 
+sudo apt update
+sudo apt upgrade -y
+
 # once finished with the process do min install
 sudo apt install -y dkms linux-headers-$(uname -r) build-essential htop bzip2
 
