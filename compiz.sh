@@ -28,7 +28,7 @@ sudo apt install -y xorg xbindkeys xinput xclip xarchiver gvfs-backends ranger
 sudo apt install -y lxde-core compiz compiz-bcop compiz-core compiz-dev compiz-gnome compiz-plugins compiz-plugins-default compiz-plugins-extra compiz-plugins-main compizconfig-settings-manager
 
 # Sound packages so we can hear vids in browser and also for Android Studio (need pulseaudio for it instead of pipewire)
-sudo apt install -y alsa-utils pavucontrol volumeicon-alsa pamixer pipewire pipewire-alsa pipewire-audio
+sudo apt install -y alsa-utils pavucontrol volumeicon-alsa pamixer pipewire pipewire-alsa pipewire-audio pipewire-libcamera
 
 # Installation for Appearance management so we can have dark mode
 sudo apt install -y lxappearance breeze-gtk-theme breeze-icon-theme
