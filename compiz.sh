@@ -34,7 +34,7 @@ sudo apt install -y alsa-utils pavucontrol volumeicon-alsa pamixer pipewire pipe
 sudo apt install -y lxappearance breeze-gtk-theme breeze-icon-theme
 
 # Base utils
-sudo apt install -y timeshift galculator p7zip-rar
+sudo apt install -y timeshift galculator p7zip-rar atril
 sudo apt install -y thunar thunar-archive-plugin thunar-data thunar-font-manager thunar-media-tags-plugin thunar-vcs-plugin thunar-volman
 sudo apt install -y geany geany-plugins geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
 
