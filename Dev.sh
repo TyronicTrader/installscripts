@@ -37,7 +37,7 @@ echo -e 'export PATH=$PATH:$HOME/.local/bin' | tee -a $HOME/.profile
 
 ####    INSTALL ZIG
 # binary
-wget https://ziglang.org/download/0.14.0/zig-linux-x86_64-0.14.0.tar.xz
+wget https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz
 # source
 # wget https://ziglang.org/download/0.13.0/zig-0.13.0.tar.xz
 tar -xvf zig-linux-x86_64-0.13.0.tar.xz --strip-components=1 --one-top-level=$HOME/.local/bin/zig
