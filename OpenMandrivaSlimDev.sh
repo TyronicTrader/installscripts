@@ -13,7 +13,9 @@ sudo dnf install brave-browser vlc plasma6-kalk --assumeyes --refresh # install 
 sudo dnf install git kernel-desktop-gcc task-devel task-c-devel task-c++-devel clang lld llvm llvm-devel lldb cmake cmake-extras cmake-doc extra-cmake-modules --assumeyes --refresh 
 
 # install base Qt6 dev components
-sudo dnf install qtxdg-tools-devel qt6-qttools qt6-cmake cmake-qtgui qmake-qt6 qt6-qtbase-tools qt6-qtdeclarative plasma6-ksshaskpass qtxdg-tools-devel qt6-qtbase-theme-gtk3 lib64Qt6Sql-devel qt6-qtbase-sql-* --assumeyes --refresh
+sudo dnf install qtxdg-tools-devel qt6-qttools qt6-cmake cmake-qtgui qmake-qt6 qt6-qtbase-tools qt6-qtdeclarative plasma6-ksshaskpass qtxdg-tools-devel qt6-qtbase-theme-gtk3 --assumeyes --refresh
+sudo dnf install lib64Qt6Sql-devel qt6-qtbase-sql-* --assumeyes --refresh
+sudo dnf install *qt6quick* --assumeyes --refresh
 
 # install lua
 sudo dnf install --skip-broken lua luarocks lua-sql-sqlite lua-dbi-sqlite --assumeyes --refresh
