@@ -29,7 +29,10 @@ sudo dnf install --skip-broken sqlite-tools --assumeyes --refresh
 # install neovim
 sudo dnf install --skip-broken neovim neovim-data --assumeyes --refresh
 
-# install DOOM emacs
+# require activating EXTRAS repository if you really want/need
+# sudo dnf install lxappearance-obconf geany-plugins sqlitebrowser --assumeyes --refresh
+
+# install DOOM emacs  ****** LAM requires activating EXTRAS repository  *******
 sudo dnf install --skip-broken lam emacs emacs-el emacs-common emacs-doc emacs-elib --assumeyes --refresh
 # lamboot came up as an issue on one previous test install but not on later ones
 git clone --depth 1 https://github.com/doomemacs/doomemacs $HOME/.config/emacs
@@ -39,9 +42,6 @@ echo -e 'export PATH=$PATH:$HOME/.config/emacs/bin' | tee -a $HOME/.profile
 
 # install KDevelop 
 sudo dnf install --skip-broken plasma6-kdevelop kdevplatform --assumeyes --refresh
-
-# require activating EXTRAS repository if you really want/need
-# sudo dnf install lxappearance-obconf geany-plugins sqlitebrowser --assumeyes --refresh
 
 # FOR THE LATEST OFFICIAL RELEASE OF QTCREATOR
 # https://download.qt.io/official_releases/qtcreator/
