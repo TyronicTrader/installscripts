@@ -16,6 +16,7 @@ sudo dnf install git kernel-desktop-gcc task-devel task-c-devel task-c++-devel c
 sudo dnf install qtxdg-tools-devel qt6-qttools qt6-cmake cmake-qtgui qmake-qt6 qt6-qtbase-tools qt6-qtdeclarative plasma6-ksshaskpass qtxdg-tools-devel qt6-qtbase-theme-gtk3 --assumeyes --refresh
 sudo dnf install lib64Qt6Sql-devel qt6-qtbase-sql-* --assumeyes --refresh
 sudo dnf install *qt6quick* --assumeyes --refresh
+sudo dnf install lib64Qt6Qml* --assumeyes --refresh
 sudo dnf install amdvlk-vulkan-driver lib64vulkan-devel vulkan-headers vulkan-tools vulkan-volk --assumeyes --refresh
 sudo dnf install libxml2 libxml2-utils libxml2-devel --assumeyes --refresh
 
