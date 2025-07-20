@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# to update the system after computer name change (needs reboot after running this)
+# to update the system after computer name change aka. using a base vm image (needs reboot after running this)
 # sudo rm /tmp/.ICE-unix/*
 
 sudo dnf install timeshift --assumeyes --refresh
@@ -19,6 +19,10 @@ sudo dnf install *qt6quick* --assumeyes --refresh
 sudo dnf install lib64Qt6Qml* --assumeyes --refresh
 sudo dnf install amdvlk-vulkan-driver lib64vulkan-devel vulkan-headers vulkan-tools vulkan-volk --assumeyes --refresh
 sudo dnf install libxml2 libxml2-utils libxml2-devel --assumeyes --refresh
+
+#install Qt6 examples and docs
+sudo dnf install qt6-qtwebsockets-examples qt6-qtwebchannel-examples qt6-qtvirtualkeyboard-examples qt6-qttools-examples qt6-qtserialport-examples qt6-qtserialbus-examples qt6-qtsensors-examples qt6-qtremoteobjects-examples qt6-qtquickeffectmaker-examples qt6-qtnetworkauth-examples qt6-qthttpserver-examples qt6-qtgraphs-examples qt6-qtdatavis3d-examples qt6-qtconnectivity-examples qt6-qtcharts-examples qt6-qtbase-examples qt6-qt5compat-examples qt6-qt3d-examples qt6-qtdeclarative-examples qt6-qtgrpc-examples qt6-qtlocation-examples qt6-qtmultimedia-examples qt6-qtpositioning-examples qt6-qtquick3d-examples qt6-qtquick3dphysics-examples qt6-qtscxml-examples qt6-qtspeech-examples qt6-qtwebengine-examples qt6-qtwebview-examples qt6-qtbase-doc qt6-qtdoc qt6-qttools-doc --assumeyes --refresh
+
 
 # install lua
 sudo dnf install --skip-broken lua luarocks lua-sql-sqlite lua-dbi-sqlite --assumeyes --refresh
