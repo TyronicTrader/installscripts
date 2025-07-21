@@ -28,10 +28,13 @@ sudo dnf install qt6-qtwebsockets-examples qt6-qtwebchannel-examples qt6-qtvirtu
 sudo dnf install --skip-broken lua luarocks lua-sql-sqlite lua-dbi-sqlite --assumeyes --refresh
 
 # install sqlite base tools NOTE:sqlitebrowser requires extras repository enabled
-sudo dnf install --skip-broken sqlite-tools --assumeyes --refresh
+sudo dnf install --skip-broken sqlite-tools sqlitebrowser --assumeyes --refresh
 
 # install neovim
 sudo dnf install --skip-broken neovim neovim-data --assumeyes --refresh
+# get the kickstart
+mkdir $HOME/.config/nvim/
+git clone https://github.com/nvim-lua/kickstart.nvim.git $HOME/.config/nvim
 
 # require activating EXTRAS repository if you really want/need
 # sudo dnf install lxappearance-obconf geany-plugins sqlitebrowser --assumeyes --refresh
@@ -46,6 +49,9 @@ echo -e 'export PATH=$PATH:$HOME/.config/emacs/bin' | tee -a $HOME/.profile
 
 # install KDevelop 
 sudo dnf install --skip-broken plasma6-kdevelop kdevplatform --assumeyes --refresh
+
+#install Inkscape
+sudo dnf install --skip-broken inkscape --assumeyes --refresh
 
 # FOR THE LATEST OFFICIAL RELEASE OF QTCREATOR
 # https://download.qt.io/official_releases/qtcreator/
